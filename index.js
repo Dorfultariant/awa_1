@@ -1,4 +1,5 @@
 
+// Descriptions were generated with GPT 4
 const information = {
 
     "dog_breeds": [
@@ -18,6 +19,18 @@ const information = {
             "breed": "Weimaraner",
             "description": "The Weimaraner, also known as the \"Gray Ghost,\" hails from Germany. This sleek and athletic dog breed has a steel gray coat, oversized floppy ears, and soulful blue eyes. Originally bred for hunting, Weimaraners are friendly, obedient, and enjoy plenty of exercise and quality time with their human companions.",
             "src": "https://dog.ceo/api/breed/weimaraner/images/random",
+            "img": ""
+        },
+        {
+            "breed": "Coonhound",
+            "description": "The Coonhound is a skilled hunting dog known for its exceptional sense of smell and endurance. There are several Coonhound breeds, including the Black and Tan Coonhound, Redbone Coonhound, and Bluetick Coonhound. These dogs excel in tracking raccoons and other game. They are friendly, loyal, and make great companions for active families.",
+            "src": "https://dog.ceo/api/breed/coonhound/images/random",
+            "img": ""
+        },
+        {
+            "breed": "Eskimo",
+            "description": "The Eskimo dog, also known as the American Eskimo Dog, is a small to medium-sized breed with a thick double coat. Despite its name, it has no direct connection to Eskimos. These dogs are intelligent, alert, and agile. They make excellent watchdogs and enjoy being part of a loving family. Their playful nature and striking appearance make them popular pets.",
+            "src": "https://dog.ceo/api/breed/eskimo/images/random",
             "img": ""
         }
     ]
