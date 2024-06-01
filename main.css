@@ -9,7 +9,7 @@ body {
     line-height: 1.2;
 }
 
-#wiki-container {
+.container {
     background-color: #303030;
     display: flex;
     justify-content: center;
@@ -55,7 +55,7 @@ body {
         padding: 10px;
     }
 
-    #wiki-container {
+    .container {
         flex-direction: column;
     }
 }
@@ -74,15 +74,17 @@ body {
         padding: 10px;
     }
 
-    #wiki-container {
+    .container {
         flex-direction: column;
     }
     .wiki-text {
+        min-width: 50%;
         max-width: 50%;
         padding: 10px;
     }
 
     .img-container {
+        min-width: 50%;
         max-width: 50%;
     }
 }
