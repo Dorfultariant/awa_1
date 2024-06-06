@@ -40,28 +40,27 @@ const information = {
 function addWikiItem(item) {
     // The "root" item tag
     const wikiItem = document.createElement("div");
-    wikiItem.classList.add("wiki-item");
+    wikiItem.className = "wiki-item";
 
     const wikiHeader = document.createElement("h1");
-    wikiHeader.classList.add("wiki-header");
-    wikiHeader.textContent = `${item.breed}`;
+    wikiHeader.className = "wiki-header";
+    wikiHeader.textContent = item.breed;
 
     const wikiContent = document.createElement("div");
-    wikiContent.classList.add("wiki-content");
+    wikiContent.className = "wiki-content";
 
     const wikiText = document.createElement("p");
-    wikiText.classList.add("wiki-text");
+    wikiText.className = "wiki-text";
     wikiText.textContent = item.description;
 
 
     const imgContainer = document.createElement("div");
-    imgContainer.classList.add("img-container");
+    imgContainer.className = "img-container";
 
     const wikiImg = document.createElement("img");
-    wikiImg.classList.add("wiki-img");
+    wikiImg.className = "wiki-img";
 
     wikiImg.src = item.img;
-    wikiImg.alt = "Img should be here";
 
 
     // Append the correct structure:
@@ -82,16 +81,20 @@ async function fetchImgSrc(breed) {
 }
 
 async function populateSite() {
-    const container = document.getElementById("wiki-container");
+    //const container = document.getElementByClassName("wiki-container");
+    const main = document.getElementsByTagName("main");
+    const contDiv = document.createElement("div");
+    contDiv.className = "container";
+
     const breeds = information.dog_breeds;
 
     // Populate with items
     for (const breed of breeds) {
         await fetchImgSrc(breed);
         const newItem = addWikiItem(breed);
-        container.appendChild(newItem)
+        contDiv.appendChild(newItem)
     }
-
+    main[0].appendChild(contDiv);
 };
 
 
