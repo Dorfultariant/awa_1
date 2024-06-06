@@ -44,7 +44,7 @@ function addWikiItem(item) {
 
     const wikiHeader = document.createElement("h1");
     wikiHeader.classList.add("wiki-header");
-    wikiHeader.textContent = `Breed ${item.breed}`;
+    wikiHeader.textContent = `${item.breed}`;
 
     const wikiContent = document.createElement("div");
     wikiContent.classList.add("wiki-content");
@@ -66,8 +66,8 @@ function addWikiItem(item) {
 
     // Append the correct structure:
     imgContainer.appendChild(wikiImg);
-    wikiContent.appendChild(imgContainer);
     wikiContent.appendChild(wikiText);
+    wikiContent.appendChild(imgContainer);
     wikiItem.appendChild(wikiHeader);
     wikiItem.appendChild(wikiContent);
 
