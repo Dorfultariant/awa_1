@@ -1,5 +1,5 @@
 
-// Descriptions were generated with GPT 4
+// Descriptions were generated with bing copilot https://www.bing.com/chat?q=Microsoft+Copilot&FORM=hpcodx
 const information = {
 
     "dog_breeds": [
@@ -11,13 +11,13 @@ const information = {
         },
         {
             "breed": "Appenzeller",
-            "description": "Appenzeller is a Swiss cheese that fits the prototype of \"Swiss cheese\" with its characteristic large holes. Unlike Alpine cheeses, Appenzeller is produced in a hilly region rather than the mountains. It has a raw, firm, cow's milk base with a washed rind, resulting in a pronounced flavor often described as \"spicy.\" The secret herbal brine recipe used during production contributes to its unique tangy taste.",
+            "description": "Appenzeller is a Swiss cheese that fits the prototype of 'Swiss cheese' with its characteristic large holes. Unlike Alpine cheeses, Appenzeller is produced in a hilly region rather than the mountains. It has a raw, firm, cow's milk base with a washed rind, resulting in a pronounced flavor often described as 'spicy.' The secret herbal brine recipe used during production contributes to its unique tangy taste.",
             "src": "https://dog.ceo/api/breed/appenzeller/images/random",
             "img": ""
         },
         {
             "breed": "Weimaraner",
-            "description": "The Weimaraner, also known as the \"Gray Ghost,\" hails from Germany. This sleek and athletic dog breed has a steel gray coat, oversized floppy ears, and soulful blue eyes. Originally bred for hunting, Weimaraners are friendly, obedient, and enjoy plenty of exercise and quality time with their human companions.",
+            "description": "The Weimaraner, also known as the 'Gray Ghost,' hails from Germany. This sleek and athletic dog breed has a steel gray coat, oversized floppy ears, and soulful blue eyes. Originally bred for hunting, Weimaraners are friendly, obedient, and enjoy plenty of exercise and quality time with their human companions.",
             "src": "https://dog.ceo/api/breed/weimaraner/images/random",
             "img": ""
         },
@@ -44,7 +44,7 @@ function addWikiItem(item) {
 
     const wikiHeader = document.createElement("h1");
     wikiHeader.classList.add("wiki-header");
-    wikiHeader.textContent = item.breed;
+    wikiHeader.textContent = `Breed ${item.breed}`;
 
     const wikiContent = document.createElement("div");
     wikiContent.classList.add("wiki-content");
@@ -66,8 +66,8 @@ function addWikiItem(item) {
 
     // Append the correct structure:
     imgContainer.appendChild(wikiImg);
-    wikiContent.appendChild(wikiText);
     wikiContent.appendChild(imgContainer);
+    wikiContent.appendChild(wikiText);
     wikiItem.appendChild(wikiHeader);
     wikiItem.appendChild(wikiContent);
 
