@@ -42,7 +42,7 @@ function addWikiItem(item) {
     const wikiItem = document.createElement("div");
     wikiItem.classList.add("wiki-item");
 
-    const wikiHeader = document.createElement("div");
+    const wikiHeader = document.createElement("h1");
     wikiHeader.classList.add("wiki-header");
     wikiHeader.textContent = item.breed;
 
@@ -60,7 +60,6 @@ function addWikiItem(item) {
     const wikiImg = document.createElement("img");
     wikiImg.classList.add("wiki-img");
 
-    // TODO add source from item
     wikiImg.src = item.img;
     wikiImg.alt = "Img should be here";
 
