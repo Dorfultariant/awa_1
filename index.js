@@ -37,6 +37,7 @@ const information = {
 
 };
 
+
 function addWikiItem(item) {
     // The "root" item tag
     const wikiItem = document.createElement("div");
@@ -80,6 +81,7 @@ async function fetchImgSrc(breed) {
     breed.img = data.message;
 }
 
+
 async function populateSite() {
     const container = document.getElementsByClassName("container");
     // const main = document.getElementsByTagName("main");
@@ -98,4 +100,8 @@ async function populateSite() {
 };
 
 
-document.addEventListener("DOMContentLoaded", populateSite);
+document.addEventListener("DOMContentLoaded", () => {
+    populateSite();
+});
+
+
