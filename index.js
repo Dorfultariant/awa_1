@@ -81,10 +81,10 @@ async function fetchImgSrc(breed) {
 }
 
 async function populateSite() {
-    //const container = document.getElementByClassName("wiki-container");
-    const main = document.getElementsByTagName("main");
-    const contDiv = document.createElement("div");
-    contDiv.className = "container";
+    const container = document.getElementsByClassName("container");
+    // const main = document.getElementsByTagName("main");
+    // const contDiv = document.createElement("div");
+    // contDiv.className = "container";
 
     const breeds = information.dog_breeds;
 
@@ -92,9 +92,9 @@ async function populateSite() {
     for (const breed of breeds) {
         await fetchImgSrc(breed);
         const newItem = addWikiItem(breed);
-        contDiv.appendChild(newItem)
+        container[0].appendChild(newItem)
     }
-    main[0].appendChild(contDiv);
+    // main[0].appendChild(contDiv);
 };
 
 
